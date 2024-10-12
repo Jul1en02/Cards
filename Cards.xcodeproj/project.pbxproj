@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020B1C522CBB39DA000F5B70 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B1C512CBB39DA000F5B70 /* ImagePickerView.swift */; };
+		020B1C542CBB39FB000F5B70 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B1C532CBB39FB000F5B70 /* CameraCaptureView.swift */; };
+		020B1C562CBB3A67000F5B70 /* LLMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B1C552CBB3A67000F5B70 /* LLMClient.swift */; };
+		020B1C582CBB425A000F5B70 /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B1C572CBB425A000F5B70 /* ImageEditorView.swift */; };
+		020B1C5B2CBB4292000F5B70 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 020B1C5A2CBB4292000F5B70 /* CropViewController */; };
+		020B1C5D2CBB4292000F5B70 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 020B1C5C2CBB4292000F5B70 /* TOCropViewController */; };
 		C603CCFF28DF7F6A00B7583E /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603CCFE28DF7F6A00B7583E /* CardsApp.swift */; };
 		C603CD0128DF7F6A00B7583E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603CD0028DF7F6A00B7583E /* ContentView.swift */; };
 		C603CD0328DF7F6A00B7583E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C603CD0228DF7F6A00B7583E /* Assets.xcassets */; };
@@ -27,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		020B1C512CBB39DA000F5B70 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		020B1C532CBB39FB000F5B70 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		020B1C552CBB3A67000F5B70 /* LLMClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMClient.swift; sourceTree = "<group>"; };
+		020B1C572CBB425A000F5B70 /* ImageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorView.swift; sourceTree = "<group>"; };
 		C603CCFB28DF7F6A00B7583E /* Swift Mind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Mind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C603CCFE28DF7F6A00B7583E /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		C603CD0028DF7F6A00B7583E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +65,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FCF7F62A6DB1F7009F37C9 /* SymbolPicker in Frameworks */,
+				020B1C5D2CBB4292000F5B70 /* TOCropViewController in Frameworks */,
+				020B1C5B2CBB4292000F5B70 /* CropViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +124,9 @@
 				C6178E372B7185FE009D70CD /* DirectionSection.swift */,
 				C6FCF7F22A6DA99E009F37C9 /* SettingsView.swift */,
 				C670298728E24EA80027D293 /* StatsView.swift */,
+				020B1C512CBB39DA000F5B70 /* ImagePickerView.swift */,
+				020B1C532CBB39FB000F5B70 /* CameraCaptureView.swift */,
+				020B1C572CBB425A000F5B70 /* ImageEditorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C60926FF28E31C0400EE0873 /* DataController.swift */,
+				020B1C552CBB3A67000F5B70 /* LLMClient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +185,8 @@
 			name = Cards;
 			packageProductDependencies = (
 				C6FCF7F52A6DB1F7009F37C9 /* SymbolPicker */,
+				020B1C5A2CBB4292000F5B70 /* CropViewController */,
+				020B1C5C2CBB4292000F5B70 /* TOCropViewController */,
 			);
 			productName = Cards;
 			productReference = C603CCFB28DF7F6A00B7583E /* Swift Mind.app */;
@@ -200,6 +218,7 @@
 			mainGroup = C603CCF228DF7F6A00B7583E;
 			packageReferences = (
 				C6FCF7F42A6DB1F7009F37C9 /* XCRemoteSwiftPackageReference "SymbolPicker" */,
+				020B1C592CBB4292000F5B70 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
 			);
 			productRefGroup = C603CCFC28DF7F6A00B7583E /* Products */;
 			projectDirPath = "";
@@ -226,11 +245,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020B1C542CBB39FB000F5B70 /* CameraCaptureView.swift in Sources */,
 				C6FCF7F32A6DA99E009F37C9 /* SettingsView.swift in Sources */,
 				C609270228E35D7700EE0873 /* AddCardView.swift in Sources */,
 				C611A4C428E1A5FE00D98CA4 /* CardView.swift in Sources */,
 				C692ACF128E0A74B00CDEE1A /* CardsListViewModel.swift in Sources */,
 				C6178E382B7185FE009D70CD /* DirectionSection.swift in Sources */,
+				020B1C582CBB425A000F5B70 /* ImageEditorView.swift in Sources */,
+				020B1C562CBB3A67000F5B70 /* LLMClient.swift in Sources */,
 				C670298628E20C440027D293 /* CardContentView.swift in Sources */,
 				C60926FE28E31B8E00EE0873 /* Cards.xcdatamodeld in Sources */,
 				C611A4C628E1A5FE00D98CA4 /* CardStackConfiguration.swift in Sources */,
@@ -238,6 +260,7 @@
 				C603CD0128DF7F6A00B7583E /* ContentView.swift in Sources */,
 				C611A4C328E1A5FE00D98CA4 /* CardSwipeDirection.swift in Sources */,
 				C6DF111828E0AAE500AEE15B /* VisualEffectBlur.swift in Sources */,
+				020B1C522CBB39DA000F5B70 /* ImagePickerView.swift in Sources */,
 				C603CCFF28DF7F6A00B7583E /* CardsApp.swift in Sources */,
 				C609270028E31C0400EE0873 /* DataController.swift in Sources */,
 				C670298828E24EA80027D293 /* StatsView.swift in Sources */,
@@ -375,10 +398,12 @@
 				CURRENT_PROJECT_VERSION = "$(CONFIG_APP_BUNDLE_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PH966ZXF4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app requires camera access to capture photos.\"";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"This app requires access to photo library to select photos.\"";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -416,10 +441,12 @@
 				CURRENT_PROJECT_VERSION = "$(CONFIG_APP_BUNDLE_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PH966ZXF4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app requires camera access to capture photos.\"";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"This app requires access to photo library to select photos.\"";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -470,6 +497,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		020B1C592CBB4292000F5B70 /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.4;
+			};
+		};
 		C6FCF7F42A6DB1F7009F37C9 /* XCRemoteSwiftPackageReference "SymbolPicker" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/xnth97/SymbolPicker";
@@ -481,6 +516,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		020B1C5A2CBB4292000F5B70 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 020B1C592CBB4292000F5B70 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		020B1C5C2CBB4292000F5B70 /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 020B1C592CBB4292000F5B70 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
 		C6FCF7F52A6DB1F7009F37C9 /* SymbolPicker */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C6FCF7F42A6DB1F7009F37C9 /* XCRemoteSwiftPackageReference "SymbolPicker" */;
